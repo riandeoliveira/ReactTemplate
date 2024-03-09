@@ -1,0 +1,6 @@
+@use "./fonts/roboto";
+
+$primary-font: "Roboto";
+$default-font: sans-serif;
+
+$group-font: $primary-font, $default-font;

@@ -1,0 +1,37 @@
+{
+  "Class Name": {
+    "prefix": "cls",
+    "body": "className={styles.$0}",
+    "description": "Class Name"
+  },
+  "Import SASS Styles": {
+    "prefix": "ims",
+    "body": "import styles from \"./styles.module.scss\";",
+    "description": "Import SASS Styles"
+  },
+  "React Component": {
+    "prefix": "rc",
+    "body": [
+      "import { type ReactElement } from \"react\";",
+      "import styles from \"./styles.module.scss\";",
+      "",
+      "export const $0 = (): ReactElement => {",
+      "  return <div className={styles.$0_component}></div>;",
+      "};"
+    ],
+    "description": "React Component"
+  },
+  "React Observable Component": {
+    "prefix": "roc",
+    "body": [
+      "import { observer } from \"mobx-react-lite\";",
+      "import { type ReactElement } from \"react\";",
+      "import styles from \"./styles.module.scss\";",
+      "",
+      "export const $0 = observer((): ReactElement => {",
+      "  return <div className={styles.$0_component}></div>;",
+      "});"
+    ],
+    "description": "React Observable Component"
+  }
+}
